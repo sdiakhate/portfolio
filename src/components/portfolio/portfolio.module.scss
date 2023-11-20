@@ -1,0 +1,36 @@
+@use "../../assets/styles/mixins" as mixin;
+.portfolio {
+  h2 {
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary);
+    letter-spacing: 0.4rem;
+    margin: 5rem 0;
+    @include mixin.md-lt {
+      margin: 4rem 0;
+    }
+  }
+  section {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 5rem;
+    @include mixin.sm-lt {
+      justify-content: center;
+    }
+    img {
+      height: 310px;
+      transition: 0.8s;
+      box-shadow: var(--box-shadow);
+      &:hover {
+        transform: scale(1.05);
+      }
+    }
+    h3 {
+      text-align: center;
+      color: var(--primary);
+      letter-spacing: 0.4rem;
+      padding-top: 2rem;
+    }
+  }
+}

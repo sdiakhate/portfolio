@@ -1,0 +1,82 @@
+@use "../../assets/styles/mixins" as mixin;
+.skills {
+  h2 {
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary);
+    letter-spacing: 0.4rem;
+  }
+
+  .content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    @include mixin.xs {
+      flex-direction: column;
+      justify-content: center;
+      align-items: center !important;
+    }
+    @include mixin.md-lt {
+      align-items: flex-start;
+    }
+    img {
+      width: 60%;
+      max-width: 591px;
+      max-height: 800px;
+      @include mixin.xs {
+        width: 100%;
+      }
+    }
+    section {
+      align-content: space-between;
+      width: 35%;
+      @include mixin.xs {
+        width: 100%;
+      }
+      div.icon {
+        margin-bottom: 10rem;
+        @include mixin.md-lt {
+          margin-bottom: 4rem;
+        }
+        h3 {
+          color: var(--primary);
+          letter-spacing: 0.4rem;
+        }
+        ul {
+          flex-wrap: wrap;
+          justify-content: space-between;
+          gap: 3rem;
+          li {
+            max-width: 82px;
+            margin-top: 5rem;
+            h4 {
+              margin-bottom: 2rem;
+              color: var(--gray-2);
+              font-size: 1.2rem;
+            }
+            img {
+              max-width: 100%;
+              transition: 0.8s;
+              cursor: pointer;
+              box-shadow: var(--box-shadow);
+              &:hover {
+                opacity: 0.6;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+  .download {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 2rem;
+    button {
+      a {
+        color: black;
+      }
+    }
+  }
+}

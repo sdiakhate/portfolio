@@ -1,0 +1,53 @@
+@use "../../assets/styles/mixins" as mixin;
+.article {
+  padding: 5rem;
+  @include mixin.md-lt {
+    padding: 2rem 0;
+  }
+
+  h2 {
+    margin-bottom: 5rem;
+    text-align: center;
+    font-size: 3rem;
+    color: var(--primary);
+    letter-spacing: 0.4rem;
+    @include mixin.sm-lt {
+      margin-bottom: 2rem;
+    }
+  }
+  section {
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+
+    .imgContainer {
+      height: 350px;
+      overflow-y: hidden;
+    }
+    p {
+      font-size: 2rem;
+      width: 60%;
+      line-height: 4rem;
+      span {
+        color: var(--primary);
+        font-weight: 600;
+      }
+      @include mixin.md-lt {
+        width: 100%;
+      }
+    }
+    @include mixin.md-lt {
+      flex-direction: column;
+    }
+  }
+  div {
+    display: flex;
+    justify-content: flex-end;
+
+    button {
+      a {
+        color: var(--gray-1);
+      }
+    }
+  }
+}

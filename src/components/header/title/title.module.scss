@@ -1,0 +1,50 @@
+@use "../../../assets/styles/mixins" as mixin;
+.content {
+  height: calc(100vh - 160px);
+  .titleContent {
+    h1 {
+      color: var(--primary);
+      font-size: 9rem;
+      letter-spacing: 0.5rem;
+      text-align: center;
+      text-shadow: 0.1rem 0.1rem 0.1rem var(--primary);
+      transform: scale(1, 2.3);
+      font-family: "Poppins";
+      margin-top: 3rem;
+      @include mixin.lg-lt {
+        font-size: 7rem;
+      }
+      @include mixin.md-lt {
+        font-size: 5rem;
+      }
+      @include mixin.sm-lt {
+        font-size: 5rem;
+      }
+      @include mixin.xs {
+        font-size: 2.5rem;
+        letter-spacing: 0.3rem;
+      }
+    }
+    p {
+      font-size: 4rem;
+      letter-spacing: 1rem;
+      text-shadow: 0.1rem 0.1rem 0.1rem var(--gray-2);
+      text-align: center;
+      @include mixin.md-lt {
+        font-size: 2.8rem;
+        letter-spacing: 0.5rem;
+      }
+      @include mixin.xs {
+        font-size: 1.8rem;
+
+        letter-spacing: 0.3rem;
+      }
+    }
+    button {
+      a {
+        color: var(--gray-1);
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
