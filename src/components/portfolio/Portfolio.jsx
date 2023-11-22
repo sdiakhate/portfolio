@@ -7,6 +7,7 @@ import { useState } from "react";
 function Portfolio() {
   const [showModal, setShowModal] = useState(false);
   const [showModalC, setShowModalC] = useState(false);
+  const [showModalP, setShowModalP] = useState(false);
 
   const handleMouseInter = () => {
     setShowModal(true);
@@ -99,8 +100,42 @@ function Portfolio() {
           )}
           <h3>Cookinon</h3>
         </div>
-        <div>
-          <img src={imgPortfolio3} alt="portfolio" />
+        <div
+          onMouseOver={() => setShowModalP(true)}
+          onMouseOut={() => setShowModalP(false)}
+        >
+          <a
+            href="https://portfolio-serignesalioudiakahate.vercel.app/"
+            target="_blank"
+            rel="noreferrer"
+          >
+            <img src={imgPortfolio3} alt="portfolio" />
+          </a>
+          {showModalP && (
+            <p
+              className={`d-flex flex-column justify-content-center align-items-center ${styles.overlay}`}
+            >
+              <h3>
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://portfolio-serignesalioudiakahate.vercel.app/"
+                >
+                  Portfolio
+                </a>
+              </h3>
+              <p>Portfolio développeur web: site web développé en React</p>
+              <button className="btn btn-primary">
+                <a
+                  target="_blank"
+                  rel="noreferrer"
+                  href="https://portfolio-serignesalioudiakahate.vercel.app/"
+                >
+                  VISITEZ
+                </a>
+              </button>
+            </p>
+          )}
           <h3>Portfolio</h3>
         </div>
       </section>
