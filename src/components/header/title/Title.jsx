@@ -8,10 +8,21 @@ function Title() {
       className={`d-flex justify-content-center align-items-center ${styles.content}`}
     >
       <div className={styles.titleContent}>
-        <MovingText type="flip" duration="2000ms" iteration="1" delay="3s">
+        <MovingText
+          className={styles.removeMarginTop}
+          type="flip"
+          duration="2000ms"
+          iteration="1"
+          delay="3s"
+        >
           <h1>Serigne Saliou Diakhaté</h1>
         </MovingText>
-        <MovingText type="slideInFromRight" duration="4000ms" iteration="1">
+        <MovingText
+          className={styles.removeMarginTop}
+          type="slideInFromRight"
+          duration="4000ms"
+          iteration="1"
+        >
           <p>développeur web - intégrateur</p>
         </MovingText>
         <MovingText
@@ -20,7 +31,7 @@ function Title() {
           iteration="1"
           delay="4s"
         >
-          <div className="d-flex justify-content-center p-20">
+          <div className="d-flex justify-content-center align-items-center p-20 ">
             <button className="btn btn-reverse-primary mr-20">
               <a href="#profile">QUI SUIS-JE</a>
             </button>

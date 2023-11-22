@@ -20,7 +20,7 @@ function Navbar({ showMenu, setShowMenu }) {
           <a href="#portfolio">Portfolio</a>
         </li>
         <li>
-          <a href="#contact">Contacts</a>
+          <a href="#contact">Contact</a>
         </li>
       </ul>
       <i

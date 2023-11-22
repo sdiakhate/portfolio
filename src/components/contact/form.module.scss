@@ -4,13 +4,13 @@
     padding: 0 !important;
   }
   h2 {
-    margin: 7rem 0;
+    margin: 8rem 0 4rem 0;
     text-align: center;
-    font-size: 3rem;
+    font-size: 5rem;
     color: var(--primary);
     letter-spacing: 0.4rem;
     @include mixin.md-lt {
-      margin: 2rem 0;
+      margin: 6rem 0 3rem 0;
     }
   }
   .contact {

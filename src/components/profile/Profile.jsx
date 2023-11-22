@@ -15,16 +15,14 @@ function Profile() {
           <br />
           Je suis <span>développeur Web junior</span> formé à{" "}
           <span>La Wild Code School</span> et vis actuellement sur Strasbourg.
-          J&apos;ai travaillé pendant 3ans en tant que Professeur de Maths et de
-          Sciences Numérique au Lycée. <span>En Formation</span> à la Wild et
-          autodidacte depuis un an, je souhaiterais renforcer ces nouvelles
-          compétences. D’un naturel <span>curieux, logique</span> et{" "}
-          <span> pragmatique </span>
-          j’aimerais intégrer un poste de <span>
-            développeur Web frontEnd
-          </span>{" "}
-          afin de monter en compétence technique. Passionné par les
-          technologies, les Maths et le monde qui nous entoure, je suis ouvert à{" "}
+          J&apos;ai travaillé pendant 3ans en tant que{" "}
+          <span> Professeur de Maths et de Sciences Numérique au Lycée. </span>
+          En Formation à la Wild et autodidacte depuis un an, je souhaiterais
+          renforcer ces nouvelles compétences. D’un naturel{" "}
+          <span>curieux, logique</span> et <span> pragmatique </span>
+          j’aimerais intégrer un poste de <span>développeur Web</span> afin de
+          monter en compétence technique. Passionné par les technologies, les
+          Maths et le monde qui nous entoure, je suis ouvert à{" "}
           <span>tous types de secteurs</span>.
         </p>
       </section>
