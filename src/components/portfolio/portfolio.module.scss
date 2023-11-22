@@ -18,19 +18,48 @@
     @include mixin.sm-lt {
       justify-content: center;
     }
-    img {
-      height: 310px;
-      transition: 0.8s;
-      box-shadow: var(--box-shadow);
+    div {
+      position: relative;
+      cursor: pointer;
+      transition: 1s transform;
       &:hover {
-        transform: scale(1.05);
+        img {
+          transform: scale(1.1);
+        }
+      }
+      img {
+        height: 310px;
+        transition: 1s;
+        box-shadow: var(--box-shadow);
       }
     }
     h3 {
       text-align: center;
-      color: var(--primary);
       letter-spacing: 0.4rem;
+      color: var(--primary);
       padding-top: 2rem;
+      a {
+        color: var(--primary);
+      }
+    }
+  }
+}
+.overlay {
+  position: absolute;
+  top: -15px;
+  left: 0;
+  width: 100%;
+  height: 310px;
+  background-color: var(--gray-3);
+  opacity: 0.8;
+  p {
+    text-align: center;
+    font-size: 2rem;
+    letter-spacing: 0.3rem;
+  }
+  button {
+    a {
+      color: var(--gray-3);
     }
   }
 }
