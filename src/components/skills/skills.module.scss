@@ -24,6 +24,11 @@
       width: 60%;
       max-width: 591px;
       max-height: 800px;
+      transition: 0.6s transform;
+      cursor: pointer;
+      &:hover {
+        transform: scale(1.05);
+      }
       @include mixin.xs {
         width: 100%;
       }
@@ -68,6 +73,7 @@
               box-shadow: var(--box-shadow);
               &:hover {
                 opacity: 0.6;
+                transform: scale(1.1);
               }
             }
           }
