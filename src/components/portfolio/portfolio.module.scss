@@ -26,6 +26,11 @@
         img {
           transform: scale(1.1);
         }
+        h3:last-child {
+          a {
+            color: var(--gray-2);
+          }
+        }
       }
       img {
         height: 310px;

@@ -98,7 +98,15 @@ function Portfolio() {
               </button>
             </p>
           )}
-          <h3>Cookinon</h3>
+          <h3>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://cookinon.vercel.app/"
+            >
+              Cookinon
+            </a>
+          </h3>
         </div>
         <div
           onMouseOver={() => setShowModalP(true)}
@@ -136,7 +144,15 @@ function Portfolio() {
               </button>
             </p>
           )}
-          <h3>Portfolio</h3>
+          <h3>
+            <a
+              target="_blank"
+              rel="noreferrer"
+              href="https://portfolio-serignesalioudiakahate.vercel.app/"
+            >
+              Portfolio
+            </a>
+          </h3>
         </div>
       </section>
     </article>
